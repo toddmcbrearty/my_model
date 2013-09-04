@@ -51,6 +51,8 @@ $this->model_name->find_gt__status( 2 ); //returns all objects with a status gre
 $this->model_name->find_lt__status( 2 ); //returns all object with a status less than 2
 ```
 
+Benefits of insert and update is it will check to see if the table has a created_at or updated_at field.
+if it does it will take care of populating them. No need for you to waste time doing it.
 Syntax for making an insert:
 ```
 $data = array(
